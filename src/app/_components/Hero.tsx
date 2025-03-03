@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -15,10 +16,12 @@ const Hero = () => {
         <h2 className="font-semibold text-2xl lg:text-3xl tracking-tight">Free Online Skill Development Program</h2>
         <br />
         <div className="flex gap-4 justify-center lg:justify-start">
-          <Button size={"lg"} className="bg-blue-500">
-            Login
+          <Button size={"lg"} className="bg-blue-500 cursor-pointer">
+            <Link href="/auth/signin">SignIn</Link>
           </Button>
-          <Button size={"lg"}>Explore</Button>
+          <Button size={"lg"} className=" cursor-pointer">
+            <Link href={"/dashboard"}>Explore</Link>
+          </Button>
         </div>
       </div>
       <div className="mt-4 lg:mt-0">
