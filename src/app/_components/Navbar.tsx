@@ -45,13 +45,18 @@ const Navbar = () => {
 
           {links.map((link) =>
             link.isButton ? (
-              <Button key={link.id} className="min-w-fit cursor-pointer rounded-full" variant={"outline"}>
-                <Link href={link.link}>{link.title}</Link>
-              </Button>
+              <Link key={link.id} href={link.link}>
+                <Button className="min-w-fit cursor-pointer rounded-full" variant={"outline"}>
+                  {link.title}{" "}
+                </Button>
+              </Link>
             ) : (
-              <Button key={link.id} className="min-w-fit cursor-pointer rounded-full" variant={"ghost"}>
-                <Link href={link.link}>{link.title}</Link>
-              </Button>
+              <Link key={link.id} href={link.link}>
+                {" "}
+                <Button className="min-w-fit cursor-pointer rounded-full" variant={"ghost"}>
+                  {link.title}{" "}
+                </Button>
+              </Link>
             )
           )}
         </div>
