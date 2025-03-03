@@ -22,7 +22,7 @@ const euclid = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CSMU Skill India: E-Learning and Job Portal",
+  title: "Skill India: E-Learning and Job Portal",
   description: "Free online skill development platform offering courses, certification program sand job opportunities to help unemployed youth and under privileged communities.",
 };
 
